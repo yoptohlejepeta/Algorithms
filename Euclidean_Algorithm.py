@@ -13,13 +13,13 @@ def GCD2(m,n):
     a = [m,n]
     b = [0,1]
     c = [1,0]
-    iterace = 0
+    iteration = 0
     while a[1]:
         b[0], b[1] = b[1], b[0] + b[1]*int(a[0]/a[1])
         c[0], c[1] = c[1], c[0] + c[1]*int(a[0]/a[1])
         a[0], a[1] = a[1], a[0]%a[1]
-        iterace += 1
-    if iterace % 2 == 0:
+        iteration += 1
+    if iteration % 2 == 0:
         return f'Greatest common divider is {a[0]} = {(b[1] - b[0])}x{n} - {(c[1] - c[0])}x{m}'
     else:
         return f'Greatest common divider is {a[0]} = {(c[1] - c[0])}x{m} - {(b[1] - b[0])}x{n}'
