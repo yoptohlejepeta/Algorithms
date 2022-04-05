@@ -24,5 +24,5 @@ def GCD2(m,n):
     else:
         return f'Greatest common divider is {a[0]} = {(c[1] - c[0])}x{m} - {(b[1] - b[0])}x{n}'
 
-print(GCD2(3997,2947))
+#print(GCD2(3997,2947))
 #Greatest common divider is 7 = 334x3997 - 453x2947
